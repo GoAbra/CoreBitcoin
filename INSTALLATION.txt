@@ -19,3 +19,4 @@ How to build and use as a framework:
 	
 5.  include the header files where you need them, such as:
 	#import <CoreBitcoin/BTCAddress.h>
+	

@@ -8,26 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		18E55F681D39585000ADADD6 /* CarthageBitcoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E55F671D39585000ADADD6 /* CarthageBitcoin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18E55F6F1D39585000ADADD6 /* CarthageBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E55F641D39585000ADADD6 /* CarthageBitcoin.framework */; };
 		18E55F7F1D395A3900ADADD6 /* Dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E55F7E1D395A3900ADADD6 /* Dummy.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		18E55F701D39585000ADADD6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18E55F5B1D39585000ADADD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 18E55F631D39585000ADADD6;
-			remoteInfo = CarthageBitcoin;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18E55F641D39585000ADADD6 /* CarthageBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarthageBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E55F671D39585000ADADD6 /* CarthageBitcoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarthageBitcoin.h; sourceTree = "<group>"; };
 		18E55F691D39585000ADADD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E55F6E1D39585000ADADD6 /* CarthageBitcoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageBitcoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E55F7E1D395A3900ADADD6 /* Dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
+		18E55F811D3C0AB100ADADD6 /* build_libraries.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build_libraries.sh; path = ../../build_libraries.sh; sourceTree = "<group>"; };
+		18E55F821D3C0AB100ADADD6 /* update_openssl.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = update_openssl.sh; path = ../../update_openssl.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,14 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18E55F6B1D39585000ADADD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				18E55F6F1D39585000ADADD6 /* CarthageBitcoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				18E55F641D39585000ADADD6 /* CarthageBitcoin.framework */,
-				18E55F6E1D39585000ADADD6 /* CarthageBitcoinTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +50,8 @@
 		18E55F661D39585000ADADD6 /* CarthageBitcoin */ = {
 			isa = PBXGroup;
 			children = (
+				18E55F811D3C0AB100ADADD6 /* build_libraries.sh */,
+				18E55F821D3C0AB100ADADD6 /* update_openssl.sh */,
 				18E55F671D39585000ADADD6 /* CarthageBitcoin.h */,
 				18E55F691D39585000ADADD6 /* Info.plist */,
 				18E55F7E1D395A3900ADADD6 /* Dummy.m */,
@@ -98,7 +81,7 @@
 				18E55F601D39585000ADADD6 /* Frameworks */,
 				18E55F611D39585000ADADD6 /* Headers */,
 				18E55F621D39585000ADADD6 /* Resources */,
-				18E55F801D395A8900ADADD6 /* Build OpenSSL */,
+				18E55F801D395A8900ADADD6 /* Build script */,
 			);
 			buildRules = (
 			);
@@ -108,24 +91,6 @@
 			productName = CarthageBitcoin;
 			productReference = 18E55F641D39585000ADADD6 /* CarthageBitcoin.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		18E55F6D1D39585000ADADD6 /* CarthageBitcoinTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18E55F7B1D39585000ADADD6 /* Build configuration list for PBXNativeTarget "CarthageBitcoinTests" */;
-			buildPhases = (
-				18E55F6A1D39585000ADADD6 /* Sources */,
-				18E55F6B1D39585000ADADD6 /* Frameworks */,
-				18E55F6C1D39585000ADADD6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				18E55F711D39585000ADADD6 /* PBXTargetDependency */,
-			);
-			name = CarthageBitcoinTests;
-			productName = CarthageBitcoinTests;
-			productReference = 18E55F6E1D39585000ADADD6 /* CarthageBitcoinTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -138,9 +103,7 @@
 				TargetAttributes = {
 					18E55F631D39585000ADADD6 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					18E55F6D1D39585000ADADD6 = {
-						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NRCWP777Y7;
 					};
 				};
 			};
@@ -157,7 +120,6 @@
 			projectRoot = "";
 			targets = (
 				18E55F631D39585000ADADD6 /* CarthageBitcoin */,
-				18E55F6D1D39585000ADADD6 /* CarthageBitcoinTests */,
 			);
 		};
 /* End PBXProject section */
@@ -170,29 +132,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18E55F6C1D39585000ADADD6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18E55F801D395A8900ADADD6 /* Build OpenSSL */ = {
+		18E55F801D395A8900ADADD6 /* Build script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Build OpenSSL";
+			name = "Build script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ..\n./update_openssl.sh\n./build_libraries.sh";
+			shellScript = "if [ -d \"${SRCROOT}/binaries\" ]\nthen\n    echo \"skipping build\"\nelse\n    ./update_openssl.sh\n    ./build_libraries.sh\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -205,22 +160,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		18E55F6A1D39585000ADADD6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18E55F711D39585000ADADD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 18E55F631D39585000ADADD6 /* CarthageBitcoin */;
-			targetProxy = 18E55F701D39585000ADADD6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		18E55F761D39585000ADADD6 /* Debug */ = {
@@ -316,6 +256,7 @@
 		18E55F791D39585000ADADD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,6 +273,7 @@
 		18E55F7A1D39585000ADADD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -342,26 +284,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.getplutus.client.CarthageBitcoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		18E55F7C1D39585000ADADD6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CarthageBitcoinTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.getplutus.client.CarthageBitcoinTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		18E55F7D1D39585000ADADD6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CarthageBitcoinTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.getplutus.client.CarthageBitcoinTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -384,14 +306,7 @@
 				18E55F7A1D39585000ADADD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		18E55F7B1D39585000ADADD6 /* Build configuration list for PBXNativeTarget "CarthageBitcoinTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				18E55F7C1D39585000ADADD6 /* Debug */,
-				18E55F7D1D39585000ADADD6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

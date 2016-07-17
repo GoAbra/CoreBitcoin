@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CarthageBitcoin/CarthageBitcoin.xcodeproj">
+      location = "group:CarthageBitcoin.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:CoreBitcoin.xcodeproj">

@@ -118,7 +118,7 @@ lipo \
 	"${WORKDIR}/openssl-${OPENSSL_VERSION}-arm64/libssl.a" \
 	"${WORKDIR}/openssl-${OPENSSL_VERSION}-i386/libssl.a" \
 	"${WORKDIR}/openssl-${OPENSSL_VERSION}-x86_64-simulator/libssl.a" \
-	-create -output lib/libssl-osx.a
+	-create -output lib/libssl-ios.a
 
 cp "${WORKDIR}/openssl-${OPENSSL_VERSION}-x86_64/libssl.a" "lib/libssl-osx.a" 
 

@@ -16,8 +16,6 @@
 		18E55F671D39585000ADADD6 /* CarthageBitcoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarthageBitcoin.h; sourceTree = "<group>"; };
 		18E55F691D39585000ADADD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E55F7E1D395A3900ADADD6 /* Dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dummy.m; sourceTree = "<group>"; };
-		18E55F811D3C0AB100ADADD6 /* build_libraries.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build_libraries.sh; path = ../../build_libraries.sh; sourceTree = "<group>"; };
-		18E55F821D3C0AB100ADADD6 /* update_openssl.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = update_openssl.sh; path = ../../update_openssl.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +48,6 @@
 		18E55F661D39585000ADADD6 /* CarthageBitcoin */ = {
 			isa = PBXGroup;
 			children = (
-				18E55F811D3C0AB100ADADD6 /* build_libraries.sh */,
-				18E55F821D3C0AB100ADADD6 /* update_openssl.sh */,
 				18E55F671D39585000ADADD6 /* CarthageBitcoin.h */,
 				18E55F691D39585000ADADD6 /* Info.plist */,
 				18E55F7E1D395A3900ADADD6 /* Dummy.m */,

@@ -73,7 +73,7 @@ rm -rf build/CoreBitcoin.build
 # If you build your project in a way that you would rather have the names differ, you 
 # can uncomment the next line and stop the build process here.
 
-#exit
+exit
 
 
 # Moving the result to a separate location

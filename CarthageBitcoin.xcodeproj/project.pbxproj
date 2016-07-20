@@ -143,7 +143,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -d \"${SRCROOT}/binaries\" ]\nthen\n    echo \"skipping build\"\nelse\n    ./update_openssl.sh\n    ./build_libraries.sh\nfi";
+			shellScript = "if [ -d \"${SRCROOT}/openssl\" ]\nthen\necho \"skipping openssl build\"\nelse\n./update_openssl.sh\nfi\nif [ -d \"${SRCROOT}/binaries\" ]\nthen\necho \"skipping binaries build\"\nelse\n./build_libraries.sh\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

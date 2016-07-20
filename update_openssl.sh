@@ -6,7 +6,7 @@
 
 #set -x
 
-OPENSSL_VERSION="1.0.1e"
+OPENSSL_VERSION="OpenSSL_1_0_2h"
 
 DEVELOPER=`xcode-select -print-path`
 
@@ -56,7 +56,8 @@ build()
    GCC=$2
    SDK=$3
    rm -rf "openssl-${OPENSSL_VERSION}"
-   tar xfz "openssl-${OPENSSL_VERSION}.tar.gz"
+#   tar xfz "openssl-${OPENSSL_VERSION}.tar.gz"
+   unzip "openssl-${OPENSSL_VERSION}.zip"
    mv "openssl-${OPENSSL_VERSION}" "openssl-${OPENSSL_VERSION}-${ARCH}"
    pushd .
    cd "openssl-${OPENSSL_VERSION}-${ARCH}"
@@ -87,7 +88,8 @@ build "armv7s" "${IPHONEOS_GCC}" "${IPHONEOS_SDK}"
 rm -rf "openssl-${OPENSSL_VERSION}"
 
 echo "Building OpenSSL for 64-bit OS X"
-tar xfz "openssl-${OPENSSL_VERSION}.tar.gz"
+#tar xfz "openssl-${OPENSSL_VERSION}.tar.gz"
+unzip "openssl-${OPENSSL_VERSION}.zip"
 mv openssl-${OPENSSL_VERSION} openssl-${OPENSSL_VERSION}-x86_64
 cd openssl-${OPENSSL_VERSION}-x86_64
 ./Configure darwin64-x86_64-cc -shared &> "../openssl-${OPENSSL_VERSION}-x86_64.log"

@@ -3,7 +3,7 @@
    LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -18,20 +18,6 @@
                BuildableName = "CarthageBitcoin.framework"
                BlueprintName = "CarthageBitcoin"
                ReferencedContainer = "container:CarthageBitcoin.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20148ADE18355D7200E68E9C"
-               BuildableName = "libCoreBitcoinIOS.a"
-               BlueprintName = "CoreBitcoinIOSlib"
-               ReferencedContainer = "container:CoreBitcoin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
